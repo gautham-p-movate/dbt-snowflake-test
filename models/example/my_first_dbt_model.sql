@@ -10,6 +10,6 @@
 {{ config(materialized='view') }}
 
 with source_data as (
-    select 'Active' as appl_status union select 'Closed' as appl_status
+    select 'Active' as appl_status union all select 'Closed' as appl_status
 )
 select * from source_data
