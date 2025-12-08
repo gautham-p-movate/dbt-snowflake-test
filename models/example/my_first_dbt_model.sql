@@ -7,9 +7,10 @@
     Try changing "table" to "view" below
 */
 
-{{ config(materialized='view') }}
+{{ config(materialized='table') }}
 
 with source_data as (
     select 'Active' as appl_status union all select 'Closed' as appl_status
 )
 select * from source_data
+
