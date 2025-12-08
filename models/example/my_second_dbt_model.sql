@@ -3,4 +3,4 @@
 
 select appl_status as stat
 from {{ ref('my_first_dbt_model') }}
-where appl_status = "Active"
+where appl_status = 'Active'
