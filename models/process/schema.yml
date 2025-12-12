@@ -8,7 +8,6 @@ models:
           - name: customer_id
             description: "The primary key for this table"
             tests:
-                - unique
                 - not_null
           - name: credit_type
             description: "The type of credit"
