@@ -14,7 +14,7 @@ models:
     - name: my_second_dbt_model
       description: "A starter dbt model"
       columns:
-          - name: stat
+          - name: status
             description: "The primary key for this table"
             tests:
                 - unique
