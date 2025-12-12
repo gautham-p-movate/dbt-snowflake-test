@@ -1,0 +1,21 @@
+
+version: 1
+
+models:
+    - name: filter_model
+      description: "Filtered dataset dbt model"
+      columns:
+          - name: customer_id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+          - name: credit_type
+            description: "The type of credit"
+            tests:
+                - not_null
+          - name: credit_active
+            description: "The status of credit"
+            tests:
+                - not_null
+    
